@@ -115,3 +115,58 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    /** ✅ Cargar el componente rabon2 dinámicamente */
+    const rabon2Container = document.getElementById("rabon2-container");
+
+    if (rabon2Container) {
+        fetch("components/rabon2.html")
+            .then(response => response.text())
+            .then(html => {
+                rabon2Container.innerHTML = html;
+            })
+            .catch(error => console.error("Error cargando el componente Rabon 2:", error));
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    /** ✅ Cargar el componente Rabon 1 dinámicamente */
+    const rabon1Container = document.getElementById("rabon1-container");
+
+    if (rabon1Container) {
+        fetch("components/rabon1.html")
+            .then(response => response.text())
+            .then(html => {
+                rabon1Container.innerHTML = html;
+            })
+            .catch(error => console.error("Error cargando el componente Rabon 1:", error));
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    /** ✅ Cargar el componente camioneta dinámicamente */
+    const camionetaContainer = document.getElementById("camioneta-container");
+
+    if (camionetaContainer) {
+        fetch("components/camioneta.html")
+            .then(response => response.text())
+            .then(html => {
+                camionetaContainer.innerHTML = html;
+            })
+            .catch(error => console.error("Error cargando el componente camioneta:", error));
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    /** ✅ Cargar el componente torton dinámicamente */
+    const tortonContainer = document.getElementById("torton-container");
+
+    if (tortonContainer) {
+        fetch("components/torton.html")
+            .then(response => response.text())
+            .then(html => {
+                tortonContainer.innerHTML = html;
+            })
+            .catch(error => console.error("Error cargando el componente camioneta:", error));
+    }
+});
