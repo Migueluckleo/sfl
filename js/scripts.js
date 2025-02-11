@@ -114,3 +114,4 @@ document.addEventListener("DOMContentLoaded", function () {
         carousel.addEventListener("mouseleave", () => carousel.style.animationPlayState = "running");
     }
 });
+
