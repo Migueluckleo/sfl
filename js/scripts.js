@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
+    /** ================================
+     * ✅ Cargar Navbar Dinámicamente
+     * ================================ */
     const navbarContainer = document.createElement("div");
     navbarContainer.id = "navbar-container";
     document.body.prepend(navbarContainer); // Agrega el contenedor antes del contenido principal
@@ -12,6 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("Error cargando la navbar:", error));
 
+    /** ================================
+     * ✅ Configurar comportamiento de la Navbar
+     * ================================ */
     function setupNavbarBehavior() {
         let lastScrollTop = 0;
         const navbar = document.getElementById("navbar");
@@ -21,16 +27,24 @@ document.addEventListener("DOMContentLoaded", function () {
         window.addEventListener("scroll", function () {
             let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-            if (scrollTop > lastScrollTop) {
-                navbar.style.transform = "translateY(-100%)"; // Oculta la navbar
+            if (scrollTop === 0) {
+                // Si el usuario está en la parte superior, siempre mostrar la navbar
+                navbar.style.transform = "translateY(0)";
+            } else if (scrollTop > lastScrollTop) {
+                // Si el usuario hace scroll hacia abajo, ocultar la navbar
+                navbar.style.transform = "translateY(-100%)";
             } else {
-                navbar.style.transform = "translateY(0)"; // Muestra la navbar
+                // Si el usuario hace scroll hacia arriba, mostrar la navbar
+                navbar.style.transform = "translateY(0)";
             }
 
             lastScrollTop = scrollTop;
         });
     }
 
+    /** ================================
+     * ✅ Configurar Menú Móvil
+     * ================================ */
     function setupMobileMenu() {
         const menuToggle = document.getElementById("menuToggle");
         const mobileMenu = document.getElementById("mobileMenu");
@@ -49,7 +63,21 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     }
-});
+
+    /** ================================
+     * ✅ Cargar Footer Dinámicamente
+     * ================================ */
+    const footerContainer = document.getElementById("footer-container");
+
+    if (footerContainer) {
+        fetch("components/footer.html")
+            .then(response => response.text())
+            .then(html => {
+                footerContainer.innerHTML = html;
+            })
+            .catch(error => console.error("Error cargando el footer:", error));
+    }
+
     /** ================================
      * ✅ Animación de Contadores
      * ================================ */
@@ -85,17 +113,4 @@ document.addEventListener("DOMContentLoaded", function () {
         carousel.addEventListener("mouseenter", () => carousel.style.animationPlayState = "paused");
         carousel.addEventListener("mouseleave", () => carousel.style.animationPlayState = "running");
     }
-    document.addEventListener("DOMContentLoaded", function () {
-        // Cargar el footer dinámicamente
-        const footerContainer = document.getElementById("footer-container");
-    
-        if (footerContainer) {
-            fetch("components/footer.html")
-                .then(response => response.text())
-                .then(html => {
-                    footerContainer.innerHTML = html;
-                })
-                .catch(error => console.error("Error cargando el footer:", error));
-        }
-    });
-    
+});
