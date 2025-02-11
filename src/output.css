@@ -2610,6 +2610,13 @@
       }
     }
   }
+  .hover\:bg-\[\#a3d3ff\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #a3d3ff;
+      }
+    }
+  }
   .hover\:text-sf-blue {
     &:hover {
       @media (hover: hover) {
