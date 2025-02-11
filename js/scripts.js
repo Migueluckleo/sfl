@@ -85,3 +85,17 @@ document.addEventListener("DOMContentLoaded", function () {
         carousel.addEventListener("mouseenter", () => carousel.style.animationPlayState = "paused");
         carousel.addEventListener("mouseleave", () => carousel.style.animationPlayState = "running");
     }
+    document.addEventListener("DOMContentLoaded", function () {
+        // Cargar el footer dinámicamente
+        const footerContainer = document.getElementById("footer-container");
+    
+        if (footerContainer) {
+            fetch("components/footer.html")
+                .then(response => response.text())
+                .then(html => {
+                    footerContainer.innerHTML = html;
+                })
+                .catch(error => console.error("Error cargando el footer:", error));
+        }
+    });
+    
