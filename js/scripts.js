@@ -211,3 +211,114 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const rabon2Container = document.getElementById("rabon2-container");
+
+    if (rabon2Container) {
+        fetch("components/rabon2.html")
+            .then(response => response.text())
+            .then(html => {
+                rabon2Container.innerHTML = html;
+
+                // ✅ Ahora inicializa Splide después de que el componente cargue
+                setTimeout(() => {
+                    const sliderElement = document.querySelector("#slider2");
+                    
+                    if (!sliderElement) {
+                        console.error("🚨 Error: No se encontró el carrusel después de cargar `rabon1.html`.");
+                        return;
+                    }
+
+                    new Splide("#slider2", {
+                        type: "loop",
+                        perPage: 1,
+                        perMove: 1,
+                        autoplay: true,
+                        interval: 5000,
+                        arrows: true,
+                        pagination: true,
+                        breakpoints: {
+                            1024: { perPage: 2 },
+                            640: { perPage: 1 },
+                        },
+                    }).mount();
+                }, 100); // Espera un poco para asegurarte de que se cargó el DOM
+            })
+            .catch(error => console.error("Error cargando el componente rabon1:", error));
+    }
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const camionetaContainer = document.getElementById("camioneta-container");
+
+    if (camionetaContainer) {
+        fetch("components/camioneta.html")
+            .then(response => response.text())
+            .then(html => {
+                camionetaContainer.innerHTML = html;
+
+                // ✅ Ahora inicializa Splide después de que el componente cargue
+                setTimeout(() => {
+                    const sliderElement = document.querySelector("#slider3");
+                    
+                    if (!sliderElement) {
+                        console.error("🚨 Error: No se encontró el carrusel después de cargar `rabon2.html`.");
+                        return;
+                    }
+
+                    new Splide("#slider3", {
+                        type: "loop",
+                        perPage: 1,
+                        perMove: 1,
+                        autoplay: true,
+                        interval: 5000,
+                        arrows: true,
+                        pagination: true,
+                        breakpoints: {
+                            1024: { perPage: 2 },
+                            640: { perPage: 1 },
+                        },
+                    }).mount();
+                }, 100); // Espera un poco para asegurarte de que se cargó el DOM
+            })
+            .catch(error => console.error("Error cargando el componente camioneta.html:", error));
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const tortonContainer = document.getElementById("torton-container");
+
+    if (tortonContainer) {
+        fetch("components/torton.html")
+            .then(response => response.text())
+            .then(html => {
+                tortonContainer.innerHTML = html;
+
+                // ✅ Ahora inicializa Splide después de que el componente cargue
+                setTimeout(() => {
+                    const sliderElement = document.querySelector("#slider4");
+                    
+                    if (!sliderElement) {
+                        console.error("🚨 Error: No se encontró el carrusel después de cargar `torton.html`.");
+                        return;
+                    }
+
+                    new Splide("#slider4", {
+                        type: "loop",
+                        perPage: 1,
+                        perMove: 1,
+                        autoplay: true,
+                        interval: 5000,
+                        arrows: true,
+                        pagination: true,
+                        breakpoints: {
+                            1024: { perPage: 2 },
+                            640: { perPage: 1 },
+                        },
+                    }).mount();
+                }, 100); // Espera un poco para asegurarte de que se cargó el DOM
+            })
+            .catch(error => console.error("Error cargando el componente camioneta.html:", error));
+    }
+});

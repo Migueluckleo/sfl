@@ -29,32 +29,57 @@
         <!--styles e iconos-->
   <link href="src/output.css" rel="stylesheet">
   <!-- CSS de Splide (desde CDN) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
 </head>
 
-<body>
-    
-    <section id="slider1" class="splide w-full max-w-4xl mx-auto">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <img src="src/assets/D_NQ_NP_775262-MLM26850906358_022018-O.webp" alt="Imagen 1" class="w-full h-auto rounded-lg shadow-lg">
-            </li>
-            <li class="splide__slide">
-              <img src="src/assets/heroInicio.jpg" alt="Imagen 2" class="w-full h-auto rounded-lg shadow-lg">
-            </li>
-            <li class="splide__slide">
-              <img src="src/assets/MexicoMap.png" alt="Imagen 3" class="w-full h-auto rounded-lg shadow-lg">
-            </li>
-          </ul>
+<body class="">
+
+   <!-- Hero -->
+   <section class="relative bg-cover bg-center h-screen lg:min-h-[600px] flex items-center pt-24" 
+   style="background-image: url(src/assets/heroInicio.jpg);">
+<div class="container mx-auto px-6 lg:px-0">
+  <!-- Contenedor de la Caja de Texto (centrado con espaciado lateral en móviles) -->
+  <div class="bg-white/40 backdrop-blur-2xl p-6 md:p-10 rounded-xl shadow-lg max-w-lg w-full lg:ml-[8%]">
+      <h1 class="text-gray-800 text-[32px] md:text-[40px] font-light leading-tight">
+          Más de <span class="font-bold text-sf-blue">15 Años</span> <br>
+          Transformando Negocios
+      </h1>
+      <p class="text-gray-600 mt-4 text-sm md:text-base">
+          Todo lo que necesitas en un solo lugar: Con nuestra 
+          experiencia en <span class="text-sf-blue">servicios fiscales, contables, legales y de nómina</span>, 
+          ayudamos a empresas como la tuya a cumplir objetivos y optimizar recursos.
+      </p>
+     
+  </div>
+</div>
+</section>
+
+<!-- Map Section -->
+    <section class="h-auto w-full max-w-[1920px] grid grid-cols-1 lg:grid-cols-3 gap-x-0 md:gap-x-6 mt-20 mx-0 px-6 md:px-[4%] place-content-center">
+        <div  class="col-span-2 h-auto">
+            <img class="px-10" src="src/assets/MexicoMap.png" alt="Mapa de cobertura">
         </div>
-      </section>
-      
+        <div id="aside" class="grid grid-rows-3 gap-y-6 py-10  ">
+            <div class=" bg-white w-full shadow-2xl rounded-2xl flex flex-col items-start justify-start p-6">
+                <i class="ri-image-circle-ai-fill text-5xl"></i>
+                <h2 class="text-xl font-semibold text-gray-800 mt-4">Este es un texto </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nulla atque nisi quas ad molestiae non, voluptatibus optio cumque laborum rem repellat sit reiciendis, vero, ipsum facere fugit natus quos!</p>
+            </div>
+            <div class=" bg-white w-full shadow-2xl rounded-2xl flex flex-col items-start justify-start p-6">
+                <i class="ri-image-circle-ai-fill text-5xl"></i>
+                <h2 class="text-xl font-semibold text-gray-800 mt-4">Este es un texto </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nulla atque nisi quas ad molestiae non, voluptatibus optio cumque laborum rem repellat sit reiciendis, vero, ipsum facere fugit natus quos!</p>
+            </div>
+            <div class=" bg-white w-full shadow-2xl rounded-2xl flex flex-col items-start justify-start p-6">
+                <i class="ri-image-circle-ai-fill text-5xl"></i>
+                <h2 class="text-xl font-semibold text-gray-800 mt-4">Este es un texto </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nulla atque nisi quas ad molestiae non, voluptatibus optio cumque laborum rem repellat sit reiciendis, vero, ipsum facere fugit natus quos!</p>
+            </div>
+        
+        </div>
+    </section>
 
-
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-
+<div id="footer-container"></div>
     <script src="js/scripts.js"></script>
 </body>
 </html>
