@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <!-- ✅ Título de la página -->
-        <title>SF Logística - Unidades</title>
+        <title>SF Logística - Cobertura</title>
     
         <!-- ✅ Descripción para SEO y redes sociales -->
         <meta name="description" content="SF Logística ofrece soluciones de transporte confiables y eficientes para empresas. Cotiza tu envío con nosotros.">
@@ -14,7 +14,7 @@
         <meta name="keywords" content="logística, empresas, SF Logística, carga sensbible">
     
         <!-- ✅ Autor (Opcional) -->
-        <meta name="author" content="SF Logística">
+        <meta name="Kúrpites" content="SF Logística">
     
         <!-- ✅ Open Graph (Para compartir en redes sociales como Facebook y LinkedIn) -->
         <meta property="og:title" content="SF Logística - Entregamos por ti">
@@ -22,54 +22,39 @@
         <meta property="og:image" content="https://pruebas.kurpites.com/assets/sf-logo.png">
         <meta property="og:url" content="https://pruebas.kurpites.com">
         <meta property="og:type" content="website">
-
     
         <!-- ✅ Favicon (Icono en la pestaña del navegador) -->
         <link rel="icon" href="src/assets/favicon.ico" type="image/x-icon">
         
         <!--styles e iconos-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
   <link href="src/output.css" rel="stylesheet">
+  <!-- CSS de Splide (desde CDN) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
 </head>
 
 <body>
-    <!--Hero-->
- <section class="relative bg-cover bg-center h-screen lg:min-h-[600px] flex items-center pt-24" 
- style="background-image: url('src/assets/heroInicio.jpg');">
-<div class="container mx-auto px-6 lg:px-0">
-<!-- Contenedor de la Caja de Texto (centrado con espaciado lateral en móviles) -->
-<div class="bg-white/40 backdrop-blur-2xl p-6 md:p-10 rounded-xl shadow-lg max-w-lg w-full lg:ml-[8%]">
-    <h1 class="text-gray-800 text-[32px] md:text-[40px] font-light leading-tight">
-        Más de <span class="font-bold text-[#185183]">15 Años</span> <br>
-        Transformando <span class="font-bold">Negocios</span>
-    </h1>
-    <p class="text-gray-600 mt-4 text-sm md:text-base">
-        Todo lo que necesitas en un solo lugar: Con nuestra 
-        experiencia en <span class="text-[#185183]">servicios fiscales, contables, legales y de nómina</span>, 
-        ayudamos a empresas como la tuya a cumplir objetivos y optimizar recursos.
-    </p>   
-</div>
-</div>
- </section>
-
-<div id="rabon1-container"></div>
-
-<div id="rabon2-container"></div>
-
-<div id="camioneta-container"></div>
-
-<div id="torton-container"></div>
+    
+    <section id="slider1" class="splide w-full max-w-4xl mx-auto">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="src/assets/D_NQ_NP_775262-MLM26850906358_022018-O.webp" alt="Imagen 1" class="w-full h-auto rounded-lg shadow-lg">
+            </li>
+            <li class="splide__slide">
+              <img src="src/assets/heroInicio.jpg" alt="Imagen 2" class="w-full h-auto rounded-lg shadow-lg">
+            </li>
+            <li class="splide__slide">
+              <img src="src/assets/MexicoMap.png" alt="Imagen 3" class="w-full h-auto rounded-lg shadow-lg">
+            </li>
+          </ul>
+        </div>
+      </section>
+      
 
 
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
-
-
-
-
-
-    <div id="footer-container"></div>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>

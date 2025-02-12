@@ -170,3 +170,44 @@ document.addEventListener("DOMContentLoaded", function () {
             .catch(error => console.error("Error cargando el componente camioneta:", error));
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const rabon1Container = document.getElementById("rabon1-container");
+
+    if (rabon1Container) {
+        fetch("components/rabon1.html")
+            .then(response => response.text())
+            .then(html => {
+                rabon1Container.innerHTML = html;
+
+                // ✅ Ahora inicializa Splide después de que el componente cargue
+                setTimeout(() => {
+                    const sliderElement = document.querySelector("#slider1");
+                    
+                    if (!sliderElement) {
+                        console.error("🚨 Error: No se encontró el carrusel después de cargar `rabon1.html`.");
+                        return;
+                    }
+
+                    new Splide("#slider1", {
+                        type: "loop",
+                        perPage: 1,
+                        perMove: 1,
+                        autoplay: true,
+                        interval: 5000,
+                        arrows: true,
+                        pagination: true,
+                        breakpoints: {
+                            1024: { perPage: 2 },
+                            640: { perPage: 1 },
+                        },
+                    }).mount();
+                }, 100); // Espera un poco para asegurarte de que se cargó el DOM
+            })
+            .catch(error => console.error("Error cargando el componente rabon1:", error));
+    }
+});
+
+
+

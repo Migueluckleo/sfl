@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import '@splidejs/splide/css';
+
 @theme {
     --color-sf-blue:#185183
 }
