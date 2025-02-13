@@ -32,7 +32,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
 </head>
 
-<body class="">
+<body class=>
 
    <!-- Hero -->
    <section class="relative bg-cover bg-center h-screen lg:min-h-[600px] flex items-center pt-24" 
@@ -54,12 +54,21 @@
 </div>
 </section>
 
+<!--title and description-->
+<section class="relative flex w-screen h-auto flex-col justify-start items-start text-gray-800 px-6 md:px-[4%] mt-8">
+    <h1 class="text-2xl md:text-3xl font-semibold">Este será el título <span class="text-sf-blue font-semibold">para la sección</span></h1>
+    <p>Aqui tiene que ir todo un renglon o hasta 2 renglones de texto para poder describir lo que se verá
+        en la siguiente sección 
+    </p>
+
+</section>
+
 <!-- Map Section -->
-    <section class="h-auto w-full max-w-[1920px] grid grid-cols-1 lg:grid-cols-3 gap-x-0 md:gap-x-6 mt-20 mx-0 px-6 md:px-[4%] place-content-center">
+    <section class="grid grid-cols-1 lg:grid-cols-3 place-content-center h-auto w-full    gap-x-0 md:gap-x-6 mt-20 mx-0 px-6 md:px-[4%]">
         <div  class="col-span-2 h-auto">
-            <img class="px-10" src="src/assets/MexicoMap.png" alt="Mapa de cobertura">
+            <img class="px-0 md:px-10" src="src/assets/MexicoMap.png" alt="Mapa de cobertura">
         </div>
-        <div id="aside" class="grid grid-rows-3 gap-y-6 py-10  ">
+        <div id="aside" class="grid grid-rows-3 gap-y-6 py-10 mx-0 ">
             <div class=" bg-white w-full shadow-2xl rounded-2xl flex flex-col items-start justify-start p-6">
                 <i class="ri-image-circle-ai-fill text-5xl"></i>
                 <h2 class="text-xl font-semibold text-gray-800 mt-4">Este es un texto </h2>
