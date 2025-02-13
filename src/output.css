@@ -714,6 +714,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .ms-6 {
+    margin-inline-start: calc(var(--spacing) * 6);
+  }
   .mt-0 {
     margin-top: calc(var(--spacing) * 0);
   }
@@ -866,6 +869,9 @@
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-\[50\%\] {
+    width: 50%;
   }
   .w-auto {
     width: auto;
