@@ -840,6 +840,12 @@
   .h-25 {
     height: calc(var(--spacing) * 25);
   }
+  .h-\[150px\] {
+    height: 150px;
+  }
+  .h-\[500px\] {
+    height: 500px;
+  }
   .h-auto {
     height: auto;
   }
@@ -1581,6 +1587,12 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-amber-100 {
+    background-color: var(--color-amber-100);
+  }
+  .bg-amber-300 {
+    background-color: var(--color-amber-300);
+  }
   .bg-gray-50 {
     background-color: var(--color-gray-50);
   }
@@ -1595,6 +1607,9 @@
   }
   .bg-sf-blue {
     background-color: var(--color-sf-blue);
+  }
+  .bg-sf-blue\/60 {
+    background-color: color-mix(in oklab, var(--color-sf-blue) 60%, transparent);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -1797,6 +1812,9 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
@@ -2581,6 +2599,11 @@
       width: auto;
     }
   }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
@@ -2803,6 +2826,11 @@
   .lg\:text-left {
     @media (width >= 64rem) {
       text-align: left;
+    }
+  }
+  .xl\:grid-cols-4 {
+    @media (width >= 80rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
   .xl\:pl-20 {
