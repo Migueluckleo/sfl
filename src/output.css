@@ -708,6 +708,9 @@
       max-width: 96rem !important;
     }
   }
+  .m-8 {
+    margin: calc(var(--spacing) * 8);
+  }
   .mx-0 {
     margin-inline: calc(var(--spacing) * 0);
   }
@@ -866,6 +869,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
