@@ -322,3 +322,19 @@ document.addEventListener("DOMContentLoaded", function () {
             .catch(error => console.error("Error cargando el componente camioneta.html:", error));
     }
 });
+
+
+
+document.querySelectorAll(".accordion-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector(".icon");
+
+        // Alternar visibilidad
+        content.classList.toggle("hidden");
+
+        // Cambiar el icono de la flecha
+        icon.classList.toggle("ri-arrow-drop-down-fill");
+        icon.classList.toggle("ri-arrow-drop-up-fill");
+    });
+});
