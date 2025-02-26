@@ -864,6 +864,9 @@
   .h-auto {
     height: auto;
   }
+  .h-fit {
+    height: fit-content;
+  }
   .h-full {
     height: 100%;
   }
