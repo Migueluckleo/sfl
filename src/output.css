@@ -1611,9 +1611,6 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-white\/40 {
-    background-color: color-mix(in oklab, var(--color-white) 40%, transparent);
-  }
   .bg-white\/50 {
     background-color: color-mix(in oklab, var(--color-white) 50%, transparent);
   }
@@ -1942,10 +1939,6 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
-  .font-light {
-    --tw-font-weight: var(--font-weight-light);
-    font-weight: var(--font-weight-light);
-  }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
@@ -2029,12 +2022,6 @@
   }
   .text-\[\#185183\] {
     color: #185183;
-  }
-  .text-gray-100 {
-    color: var(--color-gray-100);
-  }
-  .text-gray-200 {
-    color: var(--color-gray-200);
   }
   .text-gray-300 {
     color: var(--color-gray-300);
@@ -2706,11 +2693,6 @@
   .md\:text-\[32px\] {
     @media (width >= 48rem) {
       font-size: 32px;
-    }
-  }
-  .md\:text-\[40px\] {
-    @media (width >= 48rem) {
-      font-size: 40px;
     }
   }
   .lg\:left-1\/2 {
