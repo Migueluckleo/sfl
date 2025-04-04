@@ -1807,6 +1807,9 @@
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -1818,6 +1821,9 @@
   }
   .px-0 {
     padding-inline: calc(var(--spacing) * 0);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
@@ -1934,6 +1940,9 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-\[16px\] {
+    font-size: 16px;
   }
   .text-\[24px\] {
     font-size: 24px;
@@ -2550,6 +2559,27 @@
     &:hover {
       @media (hover: hover) {
         background-color: #a3d3ff;
+      }
+    }
+  }
+  .hover\:bg-sf-blue\/50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in oklab, var(--color-sf-blue) 50%, transparent);
+      }
+    }
+  }
+  .hover\:bg-sf-blue\/90 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in oklab, var(--color-sf-blue) 90%, transparent);
+      }
+    }
+  }
+  .hover\:bg-sf-blue\/95 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in oklab, var(--color-sf-blue) 95%, transparent);
       }
     }
   }
