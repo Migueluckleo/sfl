@@ -1807,9 +1807,6 @@
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
-  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -2562,20 +2559,6 @@
       }
     }
   }
-  .hover\:bg-sf-blue\/50 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: color-mix(in oklab, var(--color-sf-blue) 50%, transparent);
-      }
-    }
-  }
-  .hover\:bg-sf-blue\/90 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: color-mix(in oklab, var(--color-sf-blue) 90%, transparent);
-      }
-    }
-  }
   .hover\:bg-sf-blue\/95 {
     &:hover {
       @media (hover: hover) {
@@ -2638,11 +2621,6 @@
   .md\:ml-\[15\%\] {
     @media (width >= 48rem) {
       margin-left: 15%;
-    }
-  }
-  .md\:block {
-    @media (width >= 48rem) {
-      display: block;
     }
   }
   .md\:flex {
